@@ -1,0 +1,9 @@
+{
+    "antlr4.generation": {
+        "mode": "external",
+        "language": "CSharp",
+        "listeners": true,
+        "visitors": true,
+    },
+    "dotnet-test-explorer.testProjectPath": "**/*Tests.@(csproj|vbproj|fsproj)"
+}

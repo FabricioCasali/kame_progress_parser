@@ -1,0 +1,24 @@
+﻿<Application x:Class="KameUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModel="clr-namespace:KameUI.MVVM.ViewModel"
+             xmlns:view="clr-namespace:KameUI.MVVM.View"
+             xmlns:local="clr-namespace:KameUI"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+                <ResourceDictionary Source="Theme/ButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewModel:ImportViewModel}">
+                <view:ImportView/> 
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:StructureViewModel}">
+                <view:StructureView/>
+            </DataTemplate>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
