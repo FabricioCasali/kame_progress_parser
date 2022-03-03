@@ -6,6 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="Antlr4.Runtime.Standard" Version="4.9.3" />
+    <PackageReference Include="StringTemplate4" Version="4.0.8" />
   </ItemGroup>
-
 </Project>

@@ -24,10 +24,5 @@ namespace KameProgressParser
         {
             return $"Field {base.ToString()}: {Datatype} ({Format})";
         }
-
-        public override string ObjectType
-        {
-            get { return $"{base.ObjectType} on {TableName}"; }
-        }
     }
 }

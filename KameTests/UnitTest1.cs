@@ -27,7 +27,19 @@ namespace KameTests
             parser.BuildParseTree = true;
             var s = parser.script();
             var script = visitor.Visit(s);
-            Console.WriteLine(script);
+            var gen = new OracleGenerator();
+            var r = gen.Generate(script);
+            File.WriteAllText("c:/temp/scriptConverter.sql", r);
+        }
+
+        [Fact]
+        public void Test2()
+        {
+            var gen = new OracleGenerator();
+            var r = gen.ToOracleValidName("dz-dmed-registro");
+            var x = gen.ToOracleValidName("dz-dmed-registro-nome-longo");
+            var y = gen.ToOracleValidName("dz-dmed-registro-nome-muito-muito-muito-longo");
         }
     }
 }
+

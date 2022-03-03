@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/KameUI/KameUI.csproj",
+                "${workspaceFolder}/KameProgressParser/KameProgressParser.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/KameUI/KameUI.csproj",
+                "${workspaceFolder}/KameProgressParser/KameProgressParser.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,23 +32,11 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/KameUI/KameUI.csproj",
+                "${workspaceFolder}/KameProgressParser/KameProgressParser.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "buildElectron",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/KameUIElectron/KameUIElectron.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
+        }
     ]
 }

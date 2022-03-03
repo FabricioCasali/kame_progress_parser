@@ -16,11 +16,5 @@ namespace KameProgressParser
         {
             return $"Index {base.ToString()} on {TableName}";
         }
-
-        public override string ObjectType
-        {
-            get { return $"{base.ObjectType} on {TableName}"; }
-        }
-
     }
 }
